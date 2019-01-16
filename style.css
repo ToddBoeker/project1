@@ -27,24 +27,24 @@
 
 @font-face {
     font-family: 'Playfair Display SC';
-    src: url('PlayfairDisplaySC-Bold.eot');
-    src: url('PlayfairDisplaySC-Bold.eot?#iefix') format('embedded-opentype'),
-        url('PlayfairDisplaySC-Bold.woff2') format('woff2'),
-        url('PlayfairDisplaySC-Bold.woff') format('woff'),
-        url('PlayfairDisplaySC-Bold.ttf') format('truetype'),
-        url('PlayfairDisplaySC-Bold.svg#PlayfairDisplaySC-Bold') format('svg');
+    src: url('CSSPlayfairDisplaySC-Regular.eot');
+    src: url('CSS/PlayfairDisplaySC-Bold.eot?#iefix') format('embedded-opentype'),
+        url('CSS/PlayfairDisplaySC-Bold.woff2') format('woff2'),
+        url('CSS/PlayfairDisplaySC-Bold.woff') format('woff'),
+        url('CSS/PlayfairDisplaySC-Bold.ttf') format('truetype'),
+        url('CSS/PlayfairDisplaySC-Bold.svg#PlayfairDisplaySC-Bold') format('svg');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Playfair Display';
-    src: url('PlayfairDisplay-Regular.eot');
-    src: url('PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
-        url('PlayfairDisplay-Regular.woff2') format('woff2'),
-        url('PlayfairDisplay-Regular.woff') format('woff'),
-        url('PlayfairDisplay-Regular.ttf') format('truetype'),
-        url('PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular') format('svg');
+    src: url('CSS/PlayfairDisplay-Regular.eot');
+    src: url('CSS/PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('CSS/PlayfairDisplay-Regular.woff2') format('woff2'),
+        url('CSS/PlayfairDisplay-Regular.woff') format('woff'),
+        url('CSS/PlayfairDisplay-Regular.ttf') format('truetype'),
+        url('CSS/PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -54,60 +54,80 @@ p {
 }
 
 
-.top  {
+.top-page {
 
 display: flex;
-flex-flow: row wrap;
+flex-flow: wrap row;
+flex-direction: row;
 justify-content: space-between;
+margin: 25px 50px;
+
 
 }
 
-.top brand_logo {
-
-height: 300px;
-width: 150x;    
-
-}
-
-
-.top .links {
+.links{
 
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    
+    margin: 0 25px;
+
 }
+
+.links a {
+    
+    color:#e2574c;
+    margin: 0 25px;
+    }
+    
 
 .title-collection {
 
-    color:white;
-    padding: 10%;
-    font-size: 50;
+    display: flex;
     text-align: center;
-    margin: 0%;
-    width: 1240px;
+    background-image: url(CSS/images/flower-bkgd.jpg);
     position: relative;
-    background: url(project-01/project-01/images/flower-bkgd.jpg) fixed;
-  
+    background-size: cover;
+    width:100%;
+    height: 100%;
+}
+   
+.title-collection h1 {
+
+    color:white;
+    font-size:50;
+
+}  
     
 
-}
+
 
 .girl {
-    background: url(project-01/project-01/images/banner-girl.png);
-    background-attachment: scroll;
+    background-attachment: inherit;
     background-size: contain;
     height: 800px;
     width: 500px;
     background-repeat: no-repeat;
     background-position: center;
     
-    z-index:2;
     
 }
 
-.links a {
-color:#e2574c;
+.about_aloha {
+
+
 }
+
+.about_aloha h2 {
+
+
+}
+
+.about_aloha h3{
+
+    
+}
+
 
 footer {
 
