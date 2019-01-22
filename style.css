@@ -1,68 +1,57 @@
+/* FONT FACE */
 
-
-
-@font-face {
-    font-family: 'Raleway';
-    src: url('Raleway-Regular.eot');
-    src: url('Raleway-Regular.eot?#iefix') format('embedded-opentype'),
-        url('Raleway-Regular.woff2') format('woff2'),
-        url('Raleway-Regular.woff') format('woff'),
-        url('Raleway-Regular.ttf') format('truetype'),
-        url('Raleway-Regular.svg#Raleway-Regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+    /*RALEWAY*/
+    @font-face {
+        font-family: ralewayLight;
+        src: url(./fonts/Raleway-Light.ttf);
+    }
+    
+    @font-face {
+        font-family: ralewayLightItalic;
+        src: url(./fonts/Raleway-LightItalic.ttf);
+    }
+    @font-face {
+        font-family: ralewayMedium;
+        src: url(./fonts/Raleway-Medium.ttf);
+    }
+    
+    @font-face {
+        font-family: ralewayMediumItalic;
+        src: url(./fonts/Raleway-MediumItalic.ttf);
+    }
+    
+        /*PLAYFAIR DISPLAY*/
+    @font-face {
+        font-family: playfairBold;
+        src: url(./fonts/PlayfairDisplay-Bold.otf);
+    }
+        
+    @font-face {
+        font-family: playfairBoldItalic;
+        src: url(./fonts/PlayfairDisplay-BoldItalic.otf);
+    }
+    @font-face {
+        font-family: playfairRegular;
+        src: url(./fonts/PlayfairDisplay-Regular.otf);
+    }
+        
+    @font-face {
+        font-family: playfairRegularItalic;
+        src: url(./fonts/PlayfairDisplay-Italic.otf);
+    }
+    
+a{
+text-decoration:none;
 }
 
-@font-face {
-    font-family: 'Raleway';
-    src: url('Raleway-Light.eot');
-    src: url('Raleway-Light.eot?#iefix') format('embedded-opentype'),
-        url('Raleway-Light.woff2') format('woff2'),
-        url('Raleway-Light.woff') format('woff'),
-        url('Raleway-Light.ttf') format('truetype'),
-        url('Raleway-Light.svg#Raleway-Light') format('svg');
-    font-weight: 300;
-    font-style: normal;
-}
 
-@font-face {
-    font-family: 'Playfair Display SC';
-    src: url('CSSPlayfairDisplaySC-Regular.eot');
-    src: url('CSS/PlayfairDisplaySC-Bold.eot?#iefix') format('embedded-opentype'),
-        url('fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
-        url('CSS/PlayfairDisplaySC-Bold.woff') format('woff'),
-        url('CSS/PlayfairDisplaySC-Bold.ttf') format('truetype'),
-        url('CSS/PlayfairDisplaySC-Bold.svg#PlayfairDisplaySC-Bold') format('svg');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Playfair Display';
-    src: url('CSS/PlayfairDisplay-Regular.eot');
-    src: url('CSS/PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
-        url('fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
-        url('fonts/PlayfairDisplay-Regular.woff') format('woff'),
-        url('CSS/PlayfairDisplay-Regular.ttf') format('truetype'),
-        url('CSS/PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-p {
-    font-family:"Playfair Display";
-}
- 
 
 .top-page {
-
-display: flex;
-flex-flow: wrap row;
-flex-direction: row;
-justify-content: space-between;
-margin: 25px 50px;
-
-
+    display: flex;
+    flex-flow: wrap row;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 25px 50px;
 }
 
 .links{
@@ -70,7 +59,7 @@ margin: 25px 50px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 0 25px;
+    /* margin: 0 25px; */
 
 }
 
@@ -89,6 +78,7 @@ margin: 25px 50px;
     position: relative;
     background-size: cover;
     justify-content: center;
+    align-items: center;
     text-align: center;
     text-align:center;
     width:100%;
@@ -96,24 +86,25 @@ margin: 25px 50px;
 }
    
 .title-collection h1 {
-    font-family: 'Playfair';
     color:white;
     font-size:75px;
-
+    position: absolute;
+    font-family: playfairRegular;
 }  
     
 .title-collection h3 {
-
+    position: absolute;
     color:white;
-    font-size:25;
+    font-family: ralewayLight;
 }
 
 
 .girl {
-    background-attachment: inherit;
-    background-size: contain;
+    /* background-attachment: inherit; */
+    /* background-size: contain; */
     height: 800px;
-    width: 500px;
+    /* width: 500px; */
+    padding-top: 50px;      
     
     
     
@@ -122,6 +113,9 @@ margin: 25px 50px;
 .about_aloha {
 
 display: flex;
+flex-direction: column;
+flex-flow: column wrap;
+align-items: center;
 
 }
 
@@ -130,71 +124,91 @@ display: flex;
 display: flex;
 align-content: center;
 font-style: italic;
+color:#2d2d2d;
+
 
 }
 
+.about_aloha h4{
 
+color:#2d2d2d;
+font-family: ralewayLight;
+text-align: center;
+}
 
 .accessories {
 display: grid;
-grid-template-columns: 2fr 1fr 1fr;
-grid-auto-flow:1fr 1fr 2fr; 
+/* grid-template-columns: 2fr 1fr 1fr;
+grid-auto-flow:1fr 1fr 2fr;  */
 grid-gap: 5px;
-width: 50%;
+width: 100%;
+/* height: 100%; */
 }
 
 
 .accessories h3 {
 color:white;
-position: relative;
-align-content: center;
+position: absolute;
 text-align:center;
+font-family:"playfairRegular";
 
 }
     
-       
+.box img {
+    height: 320px;
+    width: 100%;
+    filter:saturate(80%);
+    filter:brightness(75%)
+}       
+
+.box a{
+display:flex;
+justify-content: center;
+align-items: center;
+
+}
 
 .mens {
+grid-area: 1/1/2/4;
+
 
 }
 
 
 .trends {
-   
+grid-area:1/5/2/6;   
     
 }
 
 .glasses{
 
-    
+grid-area:1/7/2/8;    
 }
 
 
 
 .sale {
     
-
+grid-area: 3/1/4/2;
 }
 
 .bags {
     
-
+grid-area: 3/3/4/4;
 
 }
 
 .womens{
     
- 
+grid-area: 3/5/4/8;
 }
-
-
-
 
 
 
 
 .updates {
 display:flex;
+flex-direction: column;
 background-image: url(images/wave-bkgd.jpg);
 position: relative;
 background-size: cover;
@@ -202,11 +216,54 @@ background-position: bottom;
 justify-content: center;
 align-items: center;
 width:100%;
-height: 400px;
+height: 250px;
 }
 
 
+.updates h2, h4{
+color:white;        
 
+
+}
+
+.emailbutton input {
+display:flex;    
+flex-direction: column;
+border-radius: 30px;
+
+
+}
+
+.products  {
+display:flex;
+flex-flow:row wrap;
+align-items: center;
+justify-content: space-around;
+}
+
+
+.productContainer {
+    display:flex;
+    flex-flow: row wrap;
+    width: 100%;
+    
+}
+
+.products h3{
+display: flex;
+align: text-top;
+font-family: playfairRegular;
+font-style: italic;
+
+
+}
+.products h4{
+color: #e2574c;
+}
+
+.products h6 {
+color:#969696
+}
 
 
 footer {
