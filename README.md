@@ -1,0 +1,1 @@
+This website titled "Aloha" is my first academic assignment that utilized elementary level HTMTL, CSS, Jquery (flickity) JS. 
