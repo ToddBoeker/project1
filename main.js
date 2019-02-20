@@ -1,1 +1,15 @@
-console.log(Hello);
+// Flickity
+
+$(function() {
+ 
+    $('.productContainer').flickity({
+        // options
+        cellAlign: 'left',
+        contain: true
+    });
+
+
+});
+
+
+

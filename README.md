@@ -1,1 +1,5 @@
-This website titled "Aloha" is my first academic assignment that utilized elementary level HTMTL, CSS, Jquery (flickity) JS. 
+This project titled "Aloha" is my first hands on experience creating a website from "scratch"
+
+
+It ultized that class learnt
+ that utilized elementary level HTMTL, CSS, Jquery (flickity) JS. 
