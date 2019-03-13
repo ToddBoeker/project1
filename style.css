@@ -41,39 +41,30 @@
     }
     
 
-.shade{
-background-color:rgba(0, 0, 0, .20);
-width: 100%;
-height: 100%;
-
-}
-
-a{
-text-decoration: none;
-}
-
-
 
 .top-page {
     display: flex;
     flex-flow: wrap row;
     flex-direction: row;
     justify-content: space-between;
-    margin: 25px 50px;
+    margin: auto 40px;
+    justify-content: center;
+    height: 175px;
+ 
 }
 
 .links{
-
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /* margin: 0 25px; */
-
+    margin: auto auto;
+    text-transform: uppercase;
 }
 
 .links a {
-    
+    font-family: ralewayMedium;
     color:#e2574c;
+    font-weight: 800;
     margin: 0 25px;
     }
     
@@ -91,35 +82,44 @@ text-decoration: none;
     text-align:center;
     width:100%;
     height: 100%;
+    background-color:rgba(0, 0, 0, .20);
 }
    
+.title-shade {
+    background-color:rgba(0, 0, 0, .20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
 .title-collection h1 {
     color:white;
     font-size:75px;
     position: absolute;
     font-family: playfairRegular;
+    z-index: 1;
 }  
     
 .title-collection h3 {
     position: absolute;
     color:white;
     font-family: ralewayLight;
+    z-index: 1;
 }
 
 
 .girl {
-    /* background-attachment: inherit; */
     /* background-size: contain; */
     height: 800px;
     /* width: 500px; */
-    padding-top: 50px;      
-    
-    
-    
+    padding-top: 75px;
+    filter:saturate(80%);
+    filter:brightness(75%);
 }
 
 .about_aloha {
-
 display: flex;
 flex-direction: column;
 flex-flow: column wrap;
@@ -128,17 +128,14 @@ align-items: center;
 }
 
 .about_aloha h2 {
-
 display: flex;
 align-content: center;
 font-style: italic;
 color:#2d2d2d;
 
-
 }
 
 .about_aloha h4{
-
 color:#2d2d2d;
 font-family: ralewayLight;
 text-align: center;
@@ -166,7 +163,7 @@ font-family:"playfairRegular";
     height: 320px;
     width: 100%;
     filter:saturate(80%);
-    filter:brightness(75%)
+    filter:brightness(75%);
 }       
 
 .box a{
@@ -218,15 +215,16 @@ grid-area: 3/5/4/8;
 display:flex;
 flex-direction: column;
 background-image: url(images/wave-bkgd.jpg);
-position: relative;
 background-size: cover;
-background-position: 25% 100%;
+background-position: center bottom;
+/* bottom: 100%; */
 justify-content: center;
 align-items: center;
 width:100%;
-height: 325px;
+height: 300px;
 text-align: center;
 line-height: 200%;
+/* margin: 50px auto; */
 
 }
 
@@ -236,7 +234,7 @@ line-height: 200%;
     justify-content: center;
     font-family:playfairRegular; 
     color:white;  
-
+    margin: 50px auto;
 }
 
 .updates p {
@@ -244,6 +242,7 @@ line-height: 200%;
     justify-content: center;
     font-family: ralewayLight;
     color: white;
+    
 }    
 
 
@@ -258,26 +257,30 @@ line-height: 200%;
 }
 
 .emailbutton{
-    position: relative;
-    width:300px;
-    display:block;
-    margin:0 auto;
+    /* position: absolute; */
+    display: flex;
+    /* justify-content: center; */
+    width: 300px;
+    margin: 0 auto;
     /* border:2px solid #ccc;  */
-    padding: 5px
-    
+    padding: 5px;
 }
 
 
 
 input[type=text] {
+    position: absolute;
     color:#969696;
     border-radius:30px;
+    width:325px;
+    height: 35px;
 }
 
 
 
 
 input[type=submit] {
+    position: relative;
     padding:5px 15px; 
     background: #e2574c;
     color:white;
@@ -285,7 +288,22 @@ input[type=submit] {
     cursor:pointer;
     -webkit-border-radius: 5px;
     border-radius: 30px; 
+    height: 30px;
+
 }
+
+
+.shade{
+    background-color:rgba(0, 0, 0, .20);
+    width: 100%;
+    height: 100%;
+    
+    }
+    
+    a{
+    text-decoration: none;
+    }
+    
 
 .products {
 min-height: 600px;
@@ -371,6 +389,6 @@ height: 28px;
 }
 
 .media i {
-  /* height: 28px; */
+  height: 28px;
   line-height: 200%;
 }
